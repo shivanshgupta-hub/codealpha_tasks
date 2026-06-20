@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="gallery-container">
+    <h2>My Image Gallery</h2>
+    
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+    </div>
+
+    <div class="gallery-grid" id="gallery">
+      <div class="gallery-item show" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" alt="Forest">
+      </div>
+      <div class="gallery-item show" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Building">
+      </div>
+      <div class="gallery-item show" data-category="animals">
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=600&q=80" alt="Lion">
+      </div>
+      <div class="gallery-item show" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&q=80" alt="Mountains">
+      </div>
+      <div class="gallery-item show" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=600&q=80" alt="Bridge">
+      </div>
+      <div class="gallery-item show" data-category="animals">
+        <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=600&q=80" alt="Panda">
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <button class="nav-btn prev-btn" id="prev-btn">&#10094;</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="Expanded Image">
+    <button class="nav-btn next-btn" id="next-btn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
